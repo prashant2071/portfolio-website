@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+ 
+ .navbar{
+    position: fixed;
+    padding: 17px 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+} 
+.max-width{
+    width:1300px;
+    margin: auto;
+}
+.navbar .max-width{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo a{
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    
+}
+.navbar ul li a{
+    margin-left: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.home{
+    /* color: black;
+    display: flex; */
+    background: url(https://images.unsplash.com/photo-1614849286521-4c58b2f0ff15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbG9yZnVsJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* .logo a{
+    position: absolute;
+    top:35%;
+    left: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+} */
+/* ul{
+    
+    font-size: 30px;
+    list-style-type: none;
+    
+} */
+/* li{
+    display: inline-block;
+    gap: 20px;
+    padding-left:20px ;
+    color: white;
+} */
+/* li a{
+    text-decoration: none;
+    color: white;
+}  */
