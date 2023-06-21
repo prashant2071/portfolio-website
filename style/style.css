@@ -6,10 +6,10 @@
 }
  
  .navbar{
-    position: fixed;
+    position: relative;
     padding: 17px 0;
     width: 100%;
-    background-color: rgba(0,0,0,0.7);
+    background-color: crimson;
 } 
 .max-width{
     width:1300px;
@@ -27,6 +27,7 @@
     cursor: pointer;
 }
 ul li {
+    text-transform: uppercase;
     list-style-type: none;
     display: inline-block;
     
@@ -41,14 +42,73 @@ ul li {
     
 }
 .home{
-    /* color: black;
-    display: flex; */
     background: url(https://images.unsplash.com/photo-1614849286521-4c58b2f0ff15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbG9yZnVsJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);
     height: 100vh;
     width: 100%;
     color: white;
+    position: absolute;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
 }
+/* home container start */
+.home-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.home-container img{
+    height: 600px;
+    border-radius: 60px 0;
+    margin: 10%;
+    box-shadow: 10px 10px 5px rgba(255, 0, 0, 0.7);
+}
+
+.welcome-text {
+    width: 50%;
+}
+.welcome-text h1{
+    font-size: 40px;
+}
+.text-wrap h1{
+    font-size:50px ;
+    color: transparent;
+    -webkit-text-stroke: 1.8px #000
+
+}
+.para p{
+    font-size: 18px;
+    word-spacing: 3px;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.download-resume button{
+    margin: 20px;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #19427a;
+    border-radius: 25px;
+    border: none;
+    transition: .6s;
+}
+.download-resume button a{
+    text-decoration: none;
+    color: white;
+}
+.download-resume button a i{
+    margin-left: 8px;
+    font-size: 22px;
+}
+.download-resume button:hover{
+    background-color: rgb(234, 37, 37);
+    transition:0.3s;
+}
+.download-resume button a:hover{
+    text-decoration: none;
+    color: black;
+}
+
