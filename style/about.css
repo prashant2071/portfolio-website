@@ -80,6 +80,7 @@ ul li {
 }
 .about-container img:hover {
   transform:translateX(-15%);
+  rotate: 30deg;
   transition: .7s;
 }
 
