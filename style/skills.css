@@ -1,0 +1,125 @@
+.skills {
+    padding: 15vh 0;
+    background: url(https://images.unsplash.com/photo-1614849286521-4c58b2f0ff15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbG9yZnVsJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);
+    /* color: white; */
+/* position: absolute; */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+  }
+  .skills .max-width {
+
+    height: 80vh;
+    width: 80vw;
+  }
+  .skillstitle {
+    margin: auto;
+    text-align: center;
+  }
+  .skillstitle h1 {
+    font-size: 45px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .skillstitle h2 {
+    font-size: 25px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: crimson;
+    position: relative;
+  }
+  .skillstitle h2::before {
+    content: "";
+    position: absolute;
+    bottom: 40%;
+    left: 35%;
+    background-color: crimson;
+    height: 5px;
+    width: 7%;
+  }
+  .skillstitle h2::after {
+    content: "";
+    position: absolute;
+    bottom: 40%;
+    right: 35%;
+    background-color: crimson;
+    height: 5px;
+    width: 7%;
+  }
+  .skills-details {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .skill-desc {
+    width: 40%;
+  }
+  .skills-graph {
+    width: 50%;
+  }
+  .skill-desc span {
+    word-spacing: 6px;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  .skill-desc p {
+    font-family: "Times New Roman", Times, serif;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .skills-graph .bars {
+    margin-top: 20px;
+  }
+  .skills-graph .bars .info {
+    display: flex;
+    justify-content: space-around;
+    gap: 50%;
+    align-items: center;
+  }
+  .skills-graph .bars .info span {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  
+  .skills-graph .bars .line {
+    height: 5px;
+    width: 100%;
+    background-color: gray;
+    position: relative;
+  }
+  .skills-graph .bars .line:before {
+    position: absolute;
+    content: "";
+    background-color: crimson;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+  }
+  .skills-graph .bars .html:before {
+    width: 90%;
+  
+  }
+  .skills-graph .bars .css:before {
+    width: 60%;
+  
+  }
+  .skills-graph .bars .javascript:before {
+    width: 80%;
+  
+  }
+  .skills-graph .bars .react:before {
+    width: 80%;
+  
+  }
+  .skills-graph .bars .node:before{
+  width: 70%;
+  
+  }
+  .skills-graph .bars .mongo:before{
+  width: 40%;
+      
+      }
+  

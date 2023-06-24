@@ -1,53 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio site</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style/style.css">
-</head>
-<body>
-    <section id="header-section" class="header" >
-        <!-- nav section start -->
-        <nav class="navbar">
-            <div class="max-width">
-                <div class="logo"><a href="#">Portfolio</a></div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skill</a></li>
-                    <li><a href="#">projects</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- home section start here -->
-        <div class="home" id="home">
-            <div class="home-container">
-                <div class="welcome-text">
-                    <h1>Hi, I am</h1>
-                    <div class="text-wrap">
-                        <h1>Prashanta Babu Thapa</h1>
-                    </div>  
-                    <div class="para">
-                        <p >
-                        I am a web developer passionate about learning new technologies and problem-solving. 
-                        I love to collaborate with team member and some input to the team .
-                        With a live for continious growth and findiing unique solution to the problems
-
-                    </div>   
-                    <div class="download-resume">
-                        <button ><a href="#" target="_blank">Download CV</a></button>
-                        <button ><a href="https://github.com/prashant2071" target="_blank">Git Hub<i class="fa-brands fa-github"></i></a></button>
-
-                    </div>               
-                </div>
-             <img src="./public/IMG_1824.JPG" alt="">   
-            </div>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/about.css" />
+    <link rel="stylesheet" href="./style/skills.css">
+  </head>
+  <body>
+    <section id="header-section" class="header">
+      <!-- nav section start -->
+      <nav class="navbar">
+        <div class="max-width">
+          <div class="logo"><a href="#">Portfolio</a></div>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#skills">Skill</a></li>
+            <li><a href="#">projects</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
         </div>
+      </nav>
+      <!-- about section start here -->
+      <div class="about" id="about">
+        <div class="about-container">
+          <div class="welcome-text">
+            <h1>Hi, I am</h1>
+            <div class="text-wrap">
+              <h1>Prashanta Babu Thapa</h1>
+            </div>
+            <div class="para">
+              <p>
+                I am a web developer passionate about learning new technologies
+                and problem-solving. I love to collaborate with team member and
+                some input to the team . With a live for continious growth and
+                findiing unique solution to the problems
+              </p>
+            </div>
+
+            <div class="download-resume">
+              <button><a href="#" target="_blank">Download CV</a></button>
+              <button>
+                <a href="https://github.com/prashant2071" target="_blank"
+                  >Git Hub<i class="fa-brands fa-github"></i
+                ></a>
+              </button>
+            </div>
+          </div>
+          <img src="./public/IMG_1824.JPG" alt="" />
+        </div>
+      </div>
     </section>
-    
-</body>
+    <section class="skills">
+      <div class="max-width">
+        <div class="skillstitle">
+          <h1>My skills</h1>
+          <h2>What is know</h2>
+        </div>
+        <div class="skills-details">
+          <div class="skill-desc">
+            <span>My creative skills and experience</span>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Temporibus sed cum rerum nam earum sunt. Quae aspernatur itaque
+              rerum ut, sed magni dolorem molestiae eveniet corporis repudiandae
+              voluptatibus repellat quidem in perferendis id, quos et aliquid
+              deserunt eaque dignissimos non! Non fugiat deserunt ratione
+              mollitia modi porro adipisci recusandae nam!
+            </p>
+          </div>
+          <div class="skills-graph">
+            <div class="bars">
+              <div class="info">
+                <span>html</span>
+                <span>90%</span>
+              </div>
+              <div class="line html"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>css</span>
+                <span>60%</span>
+              </div>
+              <div class="line css"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>javascript</span>
+                <span>80%</span>
+              </div>
+              <div class="line javascript"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>React</span>
+                <span>80%</span>
+              </div>
+              <div class="line react"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>node</span>
+                <span>70%</span>
+              </div>
+              <div class="line node"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>Mongodb</span>
+                <span>40%</span>
+              </div>
+              <div class="line mongo"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
