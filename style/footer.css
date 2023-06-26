@@ -1,0 +1,32 @@
+ .logo{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+ }
+ .desc{
+    text-align: center;
+ }
+ .desc a{
+    text-decoration: none;
+    color: white;
+ }
+ footer i{
+    font-size: 40px;
+}
+
+footer .fa-linkedin{
+    color: #0A66C2;
+}
+footer .fa-facebook{
+    color: #0E8EF2;
+
+}
+footer .fa-instagram{
+    color: #EE4C4C;
+ 
+}
+footer .fa-github{
+    color: black;
+
+}

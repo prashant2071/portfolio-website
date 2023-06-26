@@ -11,8 +11,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="./style/swiper.min.css" /> -->
+    <link rel="stylesheet" href="./style/portfolio.css" />
     <link rel="stylesheet" href="./style/about.css" />
-    <link rel="stylesheet" href="./style/skills.css">
+    <link rel="stylesheet" href="./style/skills.css" />
+    <link rel="stylesheet" href="./style/contact.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
+
+
   </head>
   <body>
     <section id="header-section" class="header">
@@ -22,9 +33,9 @@
           <div class="logo"><a href="#">Portfolio</a></div>
           <ul>
             <li><a href="#">About</a></li>
-            <li><a href="#skills">Skill</a></li>
-            <li><a href="#">projects</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#skills-section">Skill</a></li>
+            <li><a href="#portfolio-section">projects</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
         </div>
       </nav>
@@ -58,7 +69,7 @@
         </div>
       </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills-section">
       <div class="max-width">
         <div class="skillstitle">
           <h1>My skills</h1>
@@ -123,5 +134,176 @@
         </div>
       </div>
     </section>
+      <div id="portfolio-section" class="portfolio-wrapper">
+        <h1 class="text-portfolio">My Portfolio</h1>
+        <div class="slider-container swiper">
+          <div class="slider-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img
+                      src="./public/portfolio/booking.png"
+                      class="card-img"
+                      alt="person-image"
+                    />
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Hotel Booking</h2>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Est, beatae?
+                  </p>
+                  <button class="button">View More</button>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img
+                      src="./public/portfolio/foodapp.png"
+                      class="card-img"
+                      alt="person-image"
+                    />
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Food App</h2>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Est, beatae?
+                  </p>
+                  <button class="button">View More</button>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img
+                      src="./public/portfolio/portfolio.png"
+                      class="card-img"
+                      alt="person-image"
+                    />
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Personal Portfolio</h2>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Est, beatae?
+                  </p>
+                  <button class="button">View More</button>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img
+                      src="./public/portfolio/vendorEcommerce.png"
+                      class="card-img"
+                      alt="person-image"
+                    />
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Ecommerce</h2>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Est, beatae?
+                  </p>
+                  <button class="button">View More</button>
+                </div>
+              </div>
+              <!-- <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img
+                    src="./public/img-5.jpg"
+                    class="card-img"
+                    alt="person-image"
+                  />
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">roman karki</h2>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                  beatae?
+                </p>
+                <button class="button">View More</button>
+              </div>
+            </div> -->
+              <!-- <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img
+                    src="./public/img-6.jpg"
+                    class="card-img"
+                    alt="person-image"
+                  />
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">roman karki</h2>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                  beatae?
+                </p>
+                <button class="button">View More</button>
+              </div>
+            </div> -->
+            </div>
+          </div>
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <section id="contact" class="contact">
+        <h1 class="contact-us">Contact us</h1>
+        <div class="contact-section">
+          <div style="width: 100%; height: 50%;margin:0 0 15% 10%;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" 
+            width="100%"
+            height="100%" 
+            frameborder="0"
+             style="border:0"></iframe>
+         </div>
+          <div class="contact-wrapper">
+            <form>
+              <input type="text" placeholder="Enter name">
+              <input type="text" placeholder="Enter email"/>
+              <input type="tel" name="" id="" placeholder="Enter contact number">
+              <input type="text" name="" id="" placeholder="Enter address">
+              <textarea name="" id="" cols="30" rows="10" placeholder="Enter description"></textarea>
+              <button type="button">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <footer>
+                    <div class="logo">
+                      <i class="fa-brands fa-linkedin"><a href="#"></a></i>
+                      <i class="fa-brands fa-facebook"><a href="#"></a></i>
+                      <i class="fa-brands fa-instagram"><a href="#"></a></i>
+                      <i class="fa-brands fa-github"><a href="#"></a></i>
+                    </div>
+                      <div class="desc">
+                        <p>&copy; Copywright all right resrved</p>
+                        <a href="mailto:pbt133393@gmail.com">hege@example.com</a></p>
+                      </div>
+                      
+        </footer>
+      </footer>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./script/script.js"></script>
 </html>
