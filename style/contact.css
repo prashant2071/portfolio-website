@@ -5,11 +5,13 @@
     /* max-width: 1115px;*/
     text-align: center; 
     overflow: hidden;
+    position: relative;
     
 }
 .contact h1{
     position: relative;
-    font-size: 55px;
+    top: 10%;
+    font-size: 50px;
     letter-spacing: 2px;
 }
 .contact h1::before{
