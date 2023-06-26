@@ -4,6 +4,10 @@
   padding: 0;
   font-family: "Ubuntu", sans-serif;
 }
+body{
+  background: linear-gradient(to left top, #548fd8, rgb(155, 12, 48));
+  color: white;
+}
 
 .navbar {
   position: fixed;
@@ -55,14 +59,14 @@ ul li {
 }
 
 .about {
-  background: url(https://images.unsplash.com/photo-1614849286521-4c58b2f0ff15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbG9yZnVsJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);
+  /* background: url(https://images.unsplash.com/photo-1614849286521-4c58b2f0ff15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbG9yZnVsJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);
   height: 100vh;
   width: 100%;
   /* color: white; */
   /* position: absolute; */
-  background-position: center;
+  /* background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */ 
 }
 /* about container start */
 .about-container {
@@ -80,8 +84,7 @@ ul li {
 }
 .about-container img:hover {
   transform:translateX(-15%);
-  rotate: 30deg;
-  transition: .7s;
+  transition: .5s;
 }
 
 .welcome-text {

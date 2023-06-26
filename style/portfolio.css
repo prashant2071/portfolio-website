@@ -1,0 +1,148 @@
+
+.text-portfolio{
+    position: relative;
+    margin-bottom: 100px;
+    font-weight: 65px;
+    text-align: center;
+    color: white;
+    letter-spacing:2px;
+}
+.text-portfolio::before{
+    content: "";
+    position: absolute;
+    bottom: 35%;
+    left: 35%;
+    height: 5px;
+    width: 7%;
+    background-color: crimson;
+
+}
+.text-portfolio::after{
+    content: "";
+    position: absolute;
+    bottom: 35%;
+    right: 35%;
+    height: 5px;
+    width: 7%;
+    background-color: crimson;
+
+}
+
+.portfolio-wrapper {
+  width: 100%;
+  height: 70vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.slider-container {
+  width: 100%;
+  max-width: 1120px;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card {
+  border-radius: 25px;
+  background-color: #fff;
+  /* width: 320px; */
+}
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.card-image {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  /* background: #fff;
+    border-radius: 50%; */
+  padding: 3px;
+}
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25%;
+  border: 4px solid rgb(69, 135, 210);
+}
+.image-content {
+  position: relative;
+  row-gap: 5px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1c68d2;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: -40px;
+  /* border-radius: 0 25px 0 0; */
+  height: 40px;
+  width: 40px;
+  background-color: #1c68d2;
+}
+/* before ra after ma same image concide garxa yaha after lai round garera  */
+.overlay::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 0 25px 0 0;
+}
+.name {
+  font-weight: 500;
+  font-size: 18px;
+  color: #280228;
+}
+.description {
+  text-align: center;
+  font-size: 14px;
+  color: rgb(93, 91, 91);
+}
+.card-content .button {
+  background-color: #1c68d2;
+  padding: 10px 14px;
+  border: none;
+  color: white;
+  margin-top: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.card-content .button:hover {
+  background-color: #0b489f;
+}
+.swiper-navBtn {
+  color: whitesmoke;
+}
+.swiper-navBtn:hover {
+  color: #9a9c9e;
+}
+.swiper-button-next {
+  right: 0;
+}
+.swiper-button-prev {
+  left: 0;
+}

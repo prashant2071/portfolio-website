@@ -11,8 +11,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- <link rel="stylesheet" href="./style/swiper.min.css" /> -->
+    <link rel="stylesheet" href="./style/portfolio.css" />
     <link rel="stylesheet" href="./style/about.css" />
-    <link rel="stylesheet" href="./style/skills.css">
+    <link rel="stylesheet" href="./style/skills.css" />
   </head>
   <body>
     <section id="header-section" class="header">
@@ -22,8 +28,8 @@
           <div class="logo"><a href="#">Portfolio</a></div>
           <ul>
             <li><a href="#">About</a></li>
-            <li><a href="#skills">Skill</a></li>
-            <li><a href="#">projects</a></li>
+            <li><a href="#skills-section">Skill</a></li>
+            <li><a href="#portfolio-section">projects</a></li>
             <li><a href="#">contact</a></li>
           </ul>
         </div>
@@ -58,7 +64,7 @@
         </div>
       </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills-section">
       <div class="max-width">
         <div class="skillstitle">
           <h1>My skills</h1>
@@ -123,5 +129,142 @@
         </div>
       </div>
     </section>
+      <div id="portfolio-section" class="portfolio-wrapper">
+        <h1 class="text-portfolio">My Portfolio</h1>
+        <div class="slider-container swiper">
+          <div class="slider-content">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img
+                      src="./public/portfolio/booking.png"
+                      class="card-img"
+                      alt="person-image"
+                    />
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Hotel Booking</h2>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Est, beatae?
+                  </p>
+                  <button class="button">View More</button>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img
+                      src="./public/portfolio/foodapp.png"
+                      class="card-img"
+                      alt="person-image"
+                    />
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Food App</h2>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Est, beatae?
+                  </p>
+                  <button class="button">View More</button>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img
+                      src="./public/portfolio/portfolio.png"
+                      class="card-img"
+                      alt="person-image"
+                    />
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Personal Portfolio</h2>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Est, beatae?
+                  </p>
+                  <button class="button">View More</button>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+                  <div class="card-image">
+                    <img
+                      src="./public/portfolio/vendorEcommerce.png"
+                      class="card-img"
+                      alt="person-image"
+                    />
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h2 class="name">Ecommerce</h2>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Est, beatae?
+                  </p>
+                  <button class="button">View More</button>
+                </div>
+              </div>
+              <!-- <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img
+                    src="./public/img-5.jpg"
+                    class="card-img"
+                    alt="person-image"
+                  />
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">roman karki</h2>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                  beatae?
+                </p>
+                <button class="button">View More</button>
+              </div>
+            </div> -->
+              <!-- <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img
+                    src="./public/img-6.jpg"
+                    class="card-img"
+                    alt="person-image"
+                  />
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">roman karki</h2>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                  beatae?
+                </p>
+                <button class="button">View More</button>
+              </div>
+            </div> -->
+            </div>
+          </div>
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <section id="contact" class="contact">
+        
+      </section>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./script/script.js"></script>
 </html>
