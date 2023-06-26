@@ -1,8 +1,9 @@
 
-.text-portfolio{
-    position: relative;
+
+.text-portfolio {
+  position: relative;
+  font-size: 55px;
     margin-bottom: 100px;
-    font-weight: 65px;
     text-align: center;
     color: white;
     letter-spacing:2px;
@@ -11,7 +12,7 @@
     content: "";
     position: absolute;
     bottom: 35%;
-    left: 35%;
+    left: 30%;
     height: 5px;
     width: 7%;
     background-color: crimson;
@@ -21,7 +22,7 @@
     content: "";
     position: absolute;
     bottom: 35%;
-    right: 35%;
+    right: 30%;
     height: 5px;
     width: 7%;
     background-color: crimson;
