@@ -3,309 +3,404 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio site</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="./style/swiper.min.css" /> -->
-    <link rel="stylesheet" href="./style/portfolio.css" />
-    <link rel="stylesheet" href="./style/about.css" />
-    <link rel="stylesheet" href="./style/skills.css" />
-    <link rel="stylesheet" href="./style/contact.css" />
-    <link rel="stylesheet" href="./style/footer.css" />
-
-
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaQuery.css" />
   </head>
   <body>
-    <section id="header-section" class="header">
-      <!-- nav section start -->
-      <nav class="navbar">
-        <div class="max-width">
-          <div class="logo"><a href="#">Portfolio</a></div>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#skills-section">Skill</a></li>
-            <li><a href="#portfolio-section">projects</a></li>
-            <li><a href="#contact">contact</a></li>
-          </ul>
+    <nav id="desktop-nav">
+      <div class="logo">Prashanta Babu Thapa</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Prashanta Babu Thapa</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </nav>
-      <!-- about section start here -->
-      <div class="about" id="about">
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/picture.png" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Prashanta Babu Thapa</h1>
+        <p class="section__text__p2">Software developer</p>
+        <div class="btn_container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Chapter1-introduction-to-data-mining.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact info
+          </button>
+        </div>
+        <div class="social-container">
+          <img
+            src="./assets/linkedin_black_logo.png"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/prashanta-babu-thapa-2a4455139/' "
+            alt="linkedIn profile"
+          />
+          <img
+            src="./assets/github1.png"
+            class="icon"
+            onclick="location.href='https://github.com/prashant2071' "
+            alt="github profile"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get to know more</p>
+      <p class="title">About Me</p>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile12.png"
+            alt="profile-pic"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-container">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>10+ months<br />Software developer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="education_icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.E in Electronics and commuication</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a software developer from Nepal with 10 months of experience in general technology. Currently, I am working at Scodus Innovation, 
+              where I am involved in various innovative projects. 
+              I have a keen interest in staying updated with the latest trends and technologies.
+               My current focus is on expanding my knowledge in data science and artificial intelligence,
+                as I believe these fields are pivotal to the future of technology. I am passionate about continuous learning and exploring new advancements in the tech industry.            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
         <div class="about-container">
-          <div class="welcome-text">
-            <h1>Hi, I am</h1>
-            <div class="text-wrap">
-              <h1>Prashanta Babu Thapa</h1>
+          <div class="details-container color-container">
+            <h2 class="exprience-sub-title">Frontend Developer</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="">
+                  <h3>HTML</h3>
+                  <p>Experience</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="">
+                  <h3>CSS</h3>
+                  <p>Experience</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="">
+                  <h3>Typescript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="">
+                  <h3>Javascript</h3>
+                  <p>Experience</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="">
+                  <h3>React</h3>
+                  <p>Experience</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="">
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
             </div>
-            <div class="para">
-              <p>
-                I am a web developer passionate about learning new technologies
-                and problem-solving. I love to collaborate with team member and
-                some input to the team . With a live for continious growth and
-                findiing unique solution to the problems
-              </p>
+          </div>
+          <div class="details-container">
+            <h2 class="exprience-sub-title">Backend Developer</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="">
+                  <h3>Postgresql</h3>
+                  <p>Experience</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="">
+                  <h3>Express js</h3>
+                  <p>Experience</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="">
+                  <h3>Node js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="">
+                  <h3>Github</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="">
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div class="">
+                  <h3>.Net Core</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
             </div>
-
-            <div class="download-resume">
-              <button><a href="./public/document/prashantcv.pdf" target="_blank">Download CV</a></button>
-              <button>
-                <a href="https://github.com/prashant2071" target="_blank"
-                  >Git Hub<i class="fa-brands fa-github"></i
-                ></a>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#project'"
+      />
+    </section>
+    <section id="project">
+      <p class="section__text__p1">Browse my Recent</p>
+      <h2 class="title">Projects</h2>
+      <div class="experience-details-container">
+        <div class="about-container">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/proj1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Construction Website</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/prashant2071/construction-site'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://construction-websites.netlify.app/'"
+              >
+                Live Demo
               </button>
             </div>
           </div>
-          <img src="./public/IMG_1824.JPG" alt="" />
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="project-2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn_color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn_color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="project-3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn_color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn_color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-contaner">
+          <img
+            src="./assets/email .png"
+            alt="email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:exampleemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-contaner">
+          <img
+            src="./assets/linkedin_black_logo.png"
+            alt="linkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              href="https://www.linkedin.com/in/prashanta-babu-thapa-2a4455139/"
+              >LinkedIn</a
+            >
+          </p>
         </div>
       </div>
     </section>
-    <section class="skills" id="skills-section">
-      <div class="max-width">
-        <div class="skillstitle">
-          <h1>My skills</h1>
-          <h2>What is know</h2>
+    <footer>
+      <nav class="nav-links">
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <div class="skills-details">
-          <div class="skill-desc">
-            <span>My creative skills and experience</span>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus sed cum rerum nam earum sunt. Quae aspernatur itaque
-              rerum ut, sed magni dolorem molestiae eveniet corporis repudiandae
-              voluptatibus repellat quidem in perferendis id, quos et aliquid
-              deserunt eaque dignissimos non! Non fugiat deserunt ratione
-              mollitia modi porro adipisci recusandae nam!
-            </p>
-          </div>
-          <div class="skills-graph">
-            <div class="bars">
-              <div class="info">
-                <span>html</span>
-                <span>90%</span>
-              </div>
-              <div class="line html"></div>
-            </div>
-            <div class="bars">
-              <div class="info">
-                <span>css</span>
-                <span>60%</span>
-              </div>
-              <div class="line css"></div>
-            </div>
-            <div class="bars">
-              <div class="info">
-                <span>javascript</span>
-                <span>80%</span>
-              </div>
-              <div class="line javascript"></div>
-            </div>
-            <div class="bars">
-              <div class="info">
-                <span>React</span>
-                <span>80%</span>
-              </div>
-              <div class="line react"></div>
-            </div>
-            <div class="bars">
-              <div class="info">
-                <span>node</span>
-                <span>70%</span>
-              </div>
-              <div class="line node"></div>
-            </div>
-            <div class="bars">
-              <div class="info">
-                <span>Mongodb</span>
-                <span>40%</span>
-              </div>
-              <div class="line mongo"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-      <div id="portfolio-section" class="portfolio-wrapper">
-        <h1 class="text-portfolio">My Portfolio</h1>
-        <div class="slider-container swiper">
-          <div class="slider-content">
-            <div class="card-wrapper swiper-wrapper">
-              <div class="card swiper-slide">
-                <div class="image-content">
-                  <span class="overlay"></span>
-                  <div class="card-image">
-                    <img
-                      src="./public/portfolio/booking.png"
-                      class="card-img"
-                      alt="person-image"
-                    />
-                  </div>
-                </div>
-                <div class="card-content">
-                  <h2 class="name">Hotel Booking</h2>
-                  <p class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Est, beatae?
-                  </p>
-                  <button class="button">View More</button>
-                </div>
-              </div>
-              <div class="card swiper-slide">
-                <div class="image-content">
-                  <span class="overlay"></span>
-                  <div class="card-image">
-                    <img
-                      src="./public/portfolio/foodapp.png"
-                      class="card-img"
-                      alt="person-image"
-                    />
-                  </div>
-                </div>
-                <div class="card-content">
-                  <h2 class="name">Food App</h2>
-                  <p class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Est, beatae?
-                  </p>
-                  <button class="button">View More</button>
-                </div>
-              </div>
-              <div class="card swiper-slide">
-                <div class="image-content">
-                  <span class="overlay"></span>
-                  <div class="card-image">
-                    <img
-                      src="./public/portfolio/portfolio.png"
-                      class="card-img"
-                      alt="person-image"
-                    />
-                  </div>
-                </div>
-                <div class="card-content">
-                  <h2 class="name">Personal Portfolio</h2>
-                  <p class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Est, beatae?
-                  </p>
-                  <button class="button">View More</button>
-                </div>
-              </div>
-              <div class="card swiper-slide">
-                <div class="image-content">
-                  <span class="overlay"></span>
-                  <div class="card-image">
-                    <img
-                      src="./public/portfolio/vendorEcommerce.png"
-                      class="card-img"
-                      alt="person-image"
-                    />
-                  </div>
-                </div>
-                <div class="card-content">
-                  <h2 class="name">Ecommerce</h2>
-                  <p class="description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Est, beatae?
-                  </p>
-                  <button class="button">View More</button>
-                </div>
-              </div>
-              <!-- <div class="card swiper-slide">
-              <div class="image-content">
-                <span class="overlay"></span>
-                <div class="card-image">
-                  <img
-                    src="./public/img-5.jpg"
-                    class="card-img"
-                    alt="person-image"
-                  />
-                </div>
-              </div>
-              <div class="card-content">
-                <h2 class="name">roman karki</h2>
-                <p class="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
-                  beatae?
-                </p>
-                <button class="button">View More</button>
-              </div>
-            </div> -->
-              <!-- <div class="card swiper-slide">
-              <div class="image-content">
-                <span class="overlay"></span>
-                <div class="card-image">
-                  <img
-                    src="./public/img-6.jpg"
-                    class="card-img"
-                    alt="person-image"
-                  />
-                </div>
-              </div>
-              <div class="card-content">
-                <h2 class="name">roman karki</h2>
-                <p class="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
-                  beatae?
-                </p>
-                <button class="button">View More</button>
-              </div>
-            </div> -->
-            </div>
-          </div>
-          <div class="swiper-button-next swiper-navBtn"></div>
-          <div class="swiper-button-prev swiper-navBtn"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-      <section id="contact" class="contact">
-        <h1 class="contact-us">Contact us</h1>
-        <div class="contact-section">
-          <div style="width: 100%; height: 50%;margin:0 0 15% 10%;">
-            <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=kathmandu+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
-            width="100%"
-            height="100%" 
-            frameborder="0"
-             style="border:0"></iframe>
-         </div>
-          <div class="contact-wrapper">
-              <form>
-                <input type="text" placeholder="Enter name">
-                <input type="text" placeholder="Enter email"/>
-                <input type="tel" name="" id="" placeholder="Enter contact number">
-                <input type="text" name="" id="" placeholder="Enter address">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Enter description"></textarea>
-                <button type="button">Submit</button>
-              </form>
-          </div>
-        </div>
-      </section>
-      <footer>
-        <footer>
-            <div class="footer-wrapper">
-              <div class="logo">
-                <i class="fa-brands fa-linkedin"><a href="https://www.linkedin.com/in/prashanta-babu-thapa-2a4455139/"></a></i>
-                <i class="fa-brands fa-facebook"><a href="https://www.facebook.com/prashant.thapa.1996/"></a></i>
-                <i class="fa-brands fa-instagram"><a href="https://www.instagram.com/prashanta_babu_thapa/"></a></i>
-                <i class="fa-brands fa-github"><a href="https://github.com/prashant2071"></a></i>
-              </div>
-              <div class="desc">
-                <p>&copy; Copywright all right resrved</p>
-                <a href="mailto:pbt133393@gmail.com">pbt133393@gmail.com</a></p>
-              </div>
-            </div>
-                      
-        </footer>
-      </footer>
+      </nav>
+      <p>Copyright &#169 2023 Prashanta Babu Thapa. All Right Reserved.</p>
+    </footer>
+    <script src="./script.js"></script>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="./script/script.js"></script>
 </html>
